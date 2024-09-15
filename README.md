@@ -4,6 +4,7 @@ This is a collection of Brainfuck programs written by various authors.
 
 - [cristofd](cristofd/README.md): Programs by Daniel B Cristofani
 - [cybis](cybis/README.md): Sudoku program by Cybis
+- [esolang](esolang/README.md): Programs from the Esolang wiki
 - [rosettacode](rosettacode/README.md): Programs from Rosetta Code
 - [wikipedia](wikipedia/README.md): Programs from Wikipedia
 
