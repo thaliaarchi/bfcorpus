@@ -6,6 +6,8 @@ This is a collection of Brainfuck programs written by various authors.
 - [cybis](cybis/README.md): Sudoku program by Cybis
 - [esolang](esolang/README.md): Programs from the Esolang wiki
 - [rosettacode](rosettacode/README.md): Programs from Rosetta Code
+- [umueller](umueller/README.md): Programs from the original distribution by
+  Urban Müller
 - [wikipedia](wikipedia/README.md): Programs from Wikipedia
 
 Programs are licensed by their respective owners. See the README.md file in each
