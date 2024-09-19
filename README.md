@@ -6,6 +6,7 @@ This is a collection of Brainfuck programs written by various authors.
 - [cristofd](cristofd/README.md): Programs by Daniel B Cristofani
 - [cybis](cybis/README.md): Sudoku program by Cybis
 - [esolang](esolang/README.md): Programs from the Esolang wiki
+- [kiwec](kiwec/README.md): wc program by kiwec
 - [pipevm](pipevm/README.md): Pong and sh programs using the PipeVM protocol by
   Luis Fernando Estrozi
 - [rdebath](rdebath/README.md): Programs by Robert de Bath
