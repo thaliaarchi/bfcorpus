@@ -5,6 +5,7 @@ This is a collection of Brainfuck programs written by various authors.
 - [boehm](boehm/README.md): P′′ programs by Corrado Böhm
 - [cristofd](cristofd/README.md): Programs by Daniel B Cristofani
 - [cybis](cybis/README.md): Sudoku program by Cybis
+- [esofiles](esofiles.md): Programs in The Esoteric File Archive
 - [esolang](esolang/README.md): Programs from the Esolang wiki
 - [kiwec](kiwec/README.md): wc program by kiwec
 - [pipevm](pipevm/README.md): Pong and sh programs using the PipeVM protocol by
