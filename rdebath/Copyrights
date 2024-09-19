@@ -1,0 +1,9 @@
+Copyrights
+==========
+
+The bf.vim, bf2any and Tritium programs are licensed under the GPLv2 or later versions if you prefer.
+
+The programs bf2bash.sh, bf2c.awk and all brainfuck source code, including any
+embedded in the C code are explicitly granted public domain status.
+
+The code in the tools and the testing directories have their own licensing.

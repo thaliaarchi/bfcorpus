@@ -8,6 +8,7 @@ This is a collection of Brainfuck programs written by various authors.
 - [esolang](esolang/README.md): Programs from the Esolang wiki
 - [pipevm](pipevm/README.md): Pong and sh programs using the PipeVM protocol by
   Luis Fernando Estrozi
+- [rdebath](rdebath/README.md): Programs by Robert de Bath
 - [rosettacode](rosettacode/README.md): Programs from Rosetta Code
 - [umueller](umueller/README.md): Programs from the original distribution by
   Urban Müller
