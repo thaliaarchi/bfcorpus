@@ -11,6 +11,7 @@ This is a collection of Brainfuck programs written by various authors.
   Luis Fernando Estrozi
 - [rdebath](rdebath/README.md): Programs by Robert de Bath
 - [rosettacode](rosettacode/README.md): Programs from Rosetta Code
+- [rune](rune/README.md): Programs by Rune Berge
 - [umueller](umueller/README.md): Programs from the original distribution by
   Urban Müller
 - [wikipedia](wikipedia/README.md): Programs from Wikipedia
