@@ -50,10 +50,20 @@ License: Public domain [[1](https://github.com/rdebath/Brainfuck/blob/master/REA
 ## Third-party
 
 These programs are written by authors other than Robert de Bath and are included
-here in other directories.
+here in other directories. Programs testing/cristofd-\*.b do not include the
+comments from ../cristofd/tests/tests.b.orig, unlike the programs in
+../cristofd/tests/.
 
 - Daniel B Cristofani:
   - testing/Collatz.b -> ../cristofd/collatz.b
+  - testing/cristofd-30000.b -> ../cristofd/tests/cell30000.b
+  - testing/cristofd-close.b -> ../cristofd/tests/unmatchedleft.b.fail
+  - testing/cristofd-endtest.b -> ../cristofd/tests/io.b
+  - testing/cristofd-leftmargin.b -> ../cristofd/tests/leftbound.b
+  - testing/cristofd-misctest.b -> ../cristofd/tests/obscure.b
+  - testing/cristofd-open.b -> ../cristofd/tests/unmatchedright.b.fail
+  - testing/cristofd-rightmargin.b -> ../cristofd/tests/rightbound.b
+  - testing/cristofd-tests.txt -> ../cristofd/tests/tests.b.orig
   - testing/numwarp.b -> ../cristofd/numwarp.b
   - testing/SelfInt.b -> ../cristofd/dbfi.b
   - testing/utm.b -> ../cristofd/utm.b
@@ -69,10 +79,6 @@ here in other directories.
 - testing/Bench.b by unattributed
 - testing/BusyBeaver{,Overflow}.b by r.e.s.
 - testing/chess.b by unattributed
-- testing/cristofd-30000.b, testing/cristofd-close.b,
-  testing/cristofd-endtest.b, testing/cristofd-leftmargin.b,
-  testing/cristofd-misctest.b, testing/cristofd-open.b,
-  and testing/cristofd-rightmargin.b by Daniel B Cristofani
 - testing/Euler1{,-orig}.b by James Stanley
 - testing/Euler5{,-orig}.b by Eevee
 - testing/Factor.b by Brian Raiter

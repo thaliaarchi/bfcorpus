@@ -1,7 +1,6 @@
 # Brainfuck programs by Daniel B Cristofani
 
 Brainfuck programs written by Daniel B Cristofani and posted on [brainfuck.org](https://www.brainfuck.org/).
-Not all programs are included.
 
 - [bsort.b](https://www.brainfuck.org/bsort.b): A bubble sort program
 - [collatz.b](https://www.brainfuck.org/collatz.b): A mathematical function
@@ -43,6 +42,8 @@ Not all programs are included.
   0 to 10000
 - [squares2.b](https://www.brainfuck.org/squares2.b): Outputs arbitrarily many
   squares
+- [tests.b](https://www.brainfuck.org/tests.b): Little programs for testing
+  brainfuck implementations; split as tests/\*.b
 - [thuemorse.b](https://www.brainfuck.org/thuemorse.b): Outputs the Thue-Morse
   sequence
 - [tictactoe.b](https://www.brainfuck.org/tictactoe.b): Plays tic-tac-toe

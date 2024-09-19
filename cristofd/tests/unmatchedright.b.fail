@@ -1,0 +1,5 @@
++++++[>+++++++>++<<-]>.>.[
+Should ideally give error message "unmatched [" or the like, and not give
+any output. Not essential.
+Daniel B Cristofani (cristofdathevanetdotcom)
+http://www.hevanet.com/cristofd/brainfuck/
