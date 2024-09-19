@@ -35,6 +35,8 @@ Not all programs are included.
 - [random.b](https://www.brainfuck.org/random.b): A random number generator
   [based on](https://www.brainfuck.org/random.txt) a cellular automaton
 - [rot13.b](https://www.brainfuck.org/rot13.b): An unconcise, template-y rot13
+- [short.b](https://www.brainfuck.org/short.b): An assortment of small programs;
+  split as short/\*.b
 - [sierpinski.b](https://www.brainfuck.org/sierpinski.b): Outputs a Sierpiński
   triangle
 - [squares.b](https://www.brainfuck.org/squares.b): Outputs square numbers from
