@@ -49,8 +49,18 @@ License: Public domain [[1](https://github.com/rdebath/Brainfuck/blob/master/REA
 
 ## Third-party
 
-- umueller/src/\*.b by Urban Müller is at ../umueller/\*.b
-- testing/Collatz.b by Daniel B Cristofani is at ../cristofd/collatz.b
+These programs are written by authors other than Robert de Bath and are included
+here in other directories.
+
+- Daniel B Cristofani:
+  - testing/Collatz.b -> ../cristofd/collatz.b
+  - testing/numwarp.b -> ../cristofd/numwarp.b
+  - testing/SelfInt.b -> ../cristofd/dbfi.b
+  - testing/utm.b -> ../cristofd/utm.b
+- Daniel B Cristofani and modified by Robert de Bath:
+  testing/Impeccable.b -> testing/third_party/Impeccable.b
+- Urban Müller:
+  umueller/src/\*.b -> ../umueller/
 
 ### TODO
 
@@ -62,8 +72,8 @@ License: Public domain [[1](https://github.com/rdebath/Brainfuck/blob/master/REA
 - testing/cristofd-30000.b, testing/cristofd-close.b,
   testing/cristofd-endtest.b, testing/cristofd-leftmargin.b,
   testing/cristofd-misctest.b, testing/cristofd-open.b,
-  testing/cristofd-rightmargin.b, testing/Impeccable.b,
-  testing/numwarp.b, testing/SelfInt.b, and testing/utm.b by Daniel B Cristofani
+  testing/cristofd-rightmargin.b, and testing/Impeccable.b
+  by Daniel B Cristofani
 - testing/Euler1{,-orig}.b by James Stanley
 - testing/Euler5{,-orig}.b by Eevee
 - testing/Factor.b by Brian Raiter
