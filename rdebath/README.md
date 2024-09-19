@@ -72,8 +72,7 @@ here in other directories.
 - testing/cristofd-30000.b, testing/cristofd-close.b,
   testing/cristofd-endtest.b, testing/cristofd-leftmargin.b,
   testing/cristofd-misctest.b, testing/cristofd-open.b,
-  testing/cristofd-rightmargin.b, and testing/Impeccable.b
-  by Daniel B Cristofani
+  and testing/cristofd-rightmargin.b by Daniel B Cristofani
 - testing/Euler1{,-orig}.b by James Stanley
 - testing/Euler5{,-orig}.b by Eevee
 - testing/Factor.b by Brian Raiter
