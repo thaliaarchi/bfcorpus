@@ -9,15 +9,16 @@ It has been mirrored in several places, including by [Rune Berge](rune/README.md
 - Daniel B Cristofani:
   src/collatz.b, src/dbfi.b, src/dquine.b, src/fib.b, src/numwarp.b,
   src/random.b, src/rot13.b -> cristofd/
+- Keymaker:
+  - src/abc.b, src/bct.b, src/beer.b, src/digitalr.b, src/hello.b, src/isbn.b,
+    src/kbfi.b, src/langton.b, src/morse.b, src/pgq.b, src/ptmbsg.b -> keymaker/
+  - src/kquine.b -> keymaker/quine.b
 - None1: src/kolakoski.b -> none1/
 
 ## TODO
 
 - Brian Raiter: src/brquine.b, src/factor.b
 - Erik Bosman: src/mandelbrot.b
-- Keymaker:
-  src/abc.b, src/atbash.b, src/bct.b, src/beer.b, src/digitalr.b, src/golden.b,
-  src/hello.b, src/isbn.b, src/kbfi.b, src/kquine.b, src/langton.b, src/morse.b,
-  src/pgq.b, src/ptmbsg.b
+- Keymaker: src/atbash.b, src/golden.b
 - Mats Linander: impl/awib.b (see _readme.txt)
 - Unattributed: src/decss.b, src/rpn.b

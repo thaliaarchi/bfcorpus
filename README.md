@@ -7,6 +7,7 @@ This is a collection of Brainfuck programs written by various authors.
 - [cybis](cybis/README.md): Sudoku program by Cybis
 - [esofiles](esofiles.md): Programs in The Esoteric File Archive
 - [esolang](esolang/README.md): Programs from the Esolang wiki
+- [keymaker](keymaker/README.md): Programs by Keymaker
 - [kiwec](kiwec/README.md): wc program by kiwec
 - [none1](none1/README.md): Programs by None1
 - [pipevm](pipevm/README.md): Pong and sh programs using the PipeVM protocol by
