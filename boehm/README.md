@@ -6,3 +6,7 @@
 - Corrado Böhm and Giuseppe Jacopini.
   [Flow Diagrams, Turing Machines And Languages With Only Two Formation Rules](https://dl.acm.org/doi/10.1145/355592.365646).
   Communications of the ACM, May 1966
+
+In Böhm and Jacopini 1966, they prove that every flow diagram can be decomposed
+into sequence (∏), if branch (Δ), and while loop (Ω). Alternatively do-while
+loop (Φ) can be subtituted for while loop.
