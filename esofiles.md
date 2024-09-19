@@ -9,6 +9,7 @@ It has been mirrored in several places, including by [Rune Berge](rune/README.md
 - Daniel B Cristofani:
   src/collatz.b, src/dbfi.b, src/dquine.b, src/fib.b, src/numwarp.b,
   src/random.b, src/rot13.b -> cristofd/
+- None1: src/kolakoski.b -> none1/
 
 ## TODO
 
@@ -19,5 +20,4 @@ It has been mirrored in several places, including by [Rune Berge](rune/README.md
   src/hello.b, src/isbn.b, src/kbfi.b, src/kquine.b, src/langton.b, src/morse.b,
   src/pgq.b, src/ptmbsg.b
 - Mats Linander: impl/awib.b (see _readme.txt)
-- None1: src/kolakoski.b
 - Unattributed: src/decss.b, src/rpn.b
