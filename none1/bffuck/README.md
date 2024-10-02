@@ -45,5 +45,6 @@ array.bff, and rng.bff in stdlib/, but there are no such programs.
   on the Esolang wiki, revision [2024-09-30 14:08:47](https://esolangs.org/w/index.php?title=Fuck_you!&oldid=141670))
 
 License: CC0 1.0 Universal [[1](https://github.com/none-None1/BFFuck/blob/main/LICENSE),
-[2](https://github.com/graue/esofiles/pull/10#issuecomment-1891928115),
-[3](https://esolangs.org/wiki/Esolang:Copyrights)]
+[2](https://github.com/none-None1/none-None1),
+[3](https://github.com/graue/esofiles/pull/10#issuecomment-1891928115),
+[4](https://esolangs.org/wiki/Esolang:Copyrights)]
