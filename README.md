@@ -9,6 +9,7 @@ This is a collection of Brainfuck programs written by various authors.
 - [esolang](esolang/README.md): Programs from the Esolang wiki
 - [keymaker](keymaker/README.md): Programs by Keymaker
 - [kiwec](kiwec/README.md): wc program by kiwec
+- [makenowjust](makenowjust/README.md): Quines by TSUYUSATO Kitsune
 - [none1](none1/README.md): Programs by None1
 - [pipevm](pipevm/README.md): Pong and sh programs using the PipeVM protocol by
   Luis Fernando Estrozi
