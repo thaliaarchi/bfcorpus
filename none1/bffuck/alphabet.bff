@@ -1,0 +1,7 @@
+a=65
+b=26
+while(b)
+outc(a)
+add(a,1)
+sub(b,1)
+endwhile

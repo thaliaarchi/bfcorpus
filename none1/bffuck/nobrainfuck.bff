@@ -1,0 +1,12 @@
+c=inc
+d=0
+sub(c,10)
+while(c)
+eq(c,33)
+if(c)
+add(d,1)
+endif
+c=inc
+sub(c,10)
+endwhile
+outc(d)

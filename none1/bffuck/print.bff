@@ -1,0 +1,11 @@
+x=inc
+sub(x,10)
+while(x)
+eq(x,102)
+if(x)
+print(print)
+outc(10)
+endif
+x=inc
+sub(x,10)
+endwhile
