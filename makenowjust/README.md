@@ -18,13 +18,23 @@ and [bf2js](https://github.com/makenowjust/bf2js).
 - echo.bf: Example that echoes input
   (2014-04-02 in [bf2js](https://github.com/makenowjust/bf2js/blob/master/sample/echo.bf))
 
-License: [SUSHI-WARE](https://github.com/makenowjust/quine/blob/main/LICENSE.md),
+Licenses: [SUSHI-WARE](https://github.com/makenowjust/quine/blob/main/LICENSE.md),
 [WTFPL](https://github.com/makenowjust/quine/blob/9f567cab858ee33be1c70cd9a7fb02b89089f95a/README.md#license),
 or (only for quine8929.bf) [CC0 1.0 Universal](https://github.com/makenowjust/quine/blob/795ba3d5dbb7c4a7c44d2331801b7bcb52afc57d/README.md)
 for Quine Museum; [WTFPL](https://github.com/makenowjust/quine2/blob/master/README.md)
 for Quine2; [MIT](https://github.com/makenowjust/bf.jq/blob/master/README.md#license)
 for bf.jq; and [BSD-2-Clause](https://github.com/makenowjust/bf2js/blob/master/LICENSE)
 for bf2js.
+
+In summary, these programs may be used under any of the following licenses:
+
+| File         | SUSHI-WARE | WTFPL | CC0 | MIT | BSD-2-Clause |
+| ------------ | ---------- | ----- | --- | --- | ------------ |
+| quine8929.bf | ✅          | ✅     | ✅   |     |              |
+| quine404.bf  | ✅          | ✅     |     | ✅   |              |
+| quine1257.bf | ✅          | ✅     |     |     |              |
+| a.bf         |            |       |     | ✅   | ✅            |
+| echo.bf      |            |       |     |     | ✅            |
 
 ## Third-party
 
