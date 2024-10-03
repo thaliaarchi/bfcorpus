@@ -20,3 +20,10 @@ License: None
 > which is turning out to be harder than I thought it would be.
 >
 > John
+
+and about its provenance:
+
+> Date: Thu, 03 Oct 2024 15:06:43 -0600
+>
+> Alas I'm not sure where the multiplication program is from, I added it
+> to my repo at some point w/o attribution.
