@@ -16,6 +16,7 @@ This is a collection of Brainfuck programs written by various authors.
 - [pipevm](pipevm/README.md): Pong and sh programs using the PipeVM protocol by
   Luis Fernando Estrozi
 - [rdebath](rdebath/README.md): Programs by Robert de Bath
+- [regehr](regehr/README.md): Test program from John Regehr
 - [rosettacode](rosettacode/README.md): Programs from Rosetta Code
 - [rqu1](rqu1/README.md): AES-128 program by rqu1
 - [rune](rune/README.md): Programs by Rune Berge

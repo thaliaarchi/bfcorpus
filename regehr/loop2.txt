@@ -1,0 +1,164 @@
+Here's a program that multiplies two digits:
+
+read 
+>, >, <<
+
+convert from ascii
++++++ +
+[
+ >----- ---
+ >----- ---
+ <<-
+]
+
+multiply
+>[
+ >[>+>+<<-]
+ >[<+>-]
+ <<-
+]
+
+separate numbers
+>[-]>+> >+++++ +++++<
+[
+ - >- [>>>]+++++ +++++<<+
+ [<<<]>>>>
+]
+<-
+<+++++ +++++>>>[-<<<->>>]<<<
+
+
+convert to ascii
+<+++++ +
+[
+ >+++++ +++>
+ [+++++ +++>]
+ <[<]>-
+]
+
+print
+>>[.<<]<[<<]>>.
+
+Here is my compiler's IR after optimizations:
+
+(>1),(>1),(<2)(+6)A(2,-8)A(1,-8)Z(>1)
+[(>1)A(2,1)A(1,1)Z(>1)A(-1,1)Z(<2)(-1)]
+(>1)Z(>1)(+1)(>2)(+10)(<1)
+[(-1)(>1)(-1)
+  [(>3)]
+  (+10)(<2)(+1)
+  [(<3)]
+  (>4)]
+(<1)(-1)(<1)(+10)(>3)A(-3,-1)Z(<4)(+6)
+[(>1)(+8)(>1)
+  [(+8)(>1)]
+  (<1)
+  [(<1)]
+  (>1)(-1)]
+(>2)
+[.(<2)]
+(<1)
+[(<2)]
+(>2).X
+
+(>1) means shift the pointer right by one, (<2) means shift it left by 2
+(+6) means add 6 to the current tape cell, (-1) means decrement it by 1
+Z means zero out the current tape cell
+A(2,-8) means "add -8x to the cell at position +2, where x = p[0]"
+X terminates the program
+
+Hopefully this is all clear. At this point the IR is ready for code
+generation.
+
+The first loop in the program -- for ASCII conversion -- is simple and
+gets optimized away.
+
+Let's talk about the second loop -- the multiply loop. It started out
+with 2 simple loops, both of which got optimized away, leaving:
+
+[
+  (>1)
+  A(2,1)
+  A(1,1)
+  Z
+  (>1)
+  A(-1,1)
+  Z
+  (<2)
+  (-1)
+]
+
+Leaving out the tape movements, we're going to execute the following
+loop:
+
+while (p[0] != 0) {
+  p[3] += p[1]
+  p[2] += p[1]
+  p[1] = 0
+  p[1] += p[2]
+  p[2] = 0
+  p[0]--
+}
+
+let's make it easier to read by renaming p[0]..p[3] as w, x, y, z:
+
+while (w != 0) {
+  z += x;
+  y += x;
+  x = y;
+  y = 0;
+  --w;
+}
+
+w is a purely an induction variable, it isn't read or written
+otherwise, so our job here is to reason about effect of running the
+loop body w times:
+
+z += x
+y += x
+x = y
+y = 0
+
+how does this end up working? the base case for old_w = 0 is:
+
+x = old_x
+y = old_y
+z = old_z
+w = 0
+
+when old_w = 1:
+
+z = old_z + old_x
+x = old_y + old_x
+y = 0
+w = 0
+
+when old_w = 2:
+
+z = old_z + old_x + old_y + old_x
+x = old_y + old_x
+y = 0
+w = 0
+
+when old_w = 3:
+
+z = old_z + old_x + old_y + old_x + old_y + old_x
+x = old_y + old_x
+y = 0
+w = 0
+
+finally, parameterizing over w:
+
+z = old_z + (old_w * old_x) + ((old_w - 1) * old_y)
+x = old_y + old_x
+y = 0
+w = 0
+
+in our specific program, the loop initial conditions have old_z = 0
+and old_y = 0, in which case z simplifies to:
+
+z = old_w * old_x
+
+of course this is the multiplication result that we hoped for. but our
+optimizer can't (in the general case) know the loop initial
+conditions, so it has to handle the general case instead.
