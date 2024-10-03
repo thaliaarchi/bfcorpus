@@ -1,0 +1,32 @@
+BrainFuck Bit Doubler Made By: NYYRIKKI 2002
+--------------------------------------------
+
+BF bit doubler is actually BrainFuck interpreter for BrainFuck. It anyway doubles the bit width of underlying BF interpreter. This means, that if you have 8bit interpreter you can use 16bit code on it and if you have 16bit interpreter you can run 32bit code on it.
+
+You can use this by puting code in from standard input and ending it with ":" character. Everything writen after ":" is considered to be input for the code.
+
+In MSX-DOS2 you can run 16bit code like this:
+
+BF8 BITDBL.BF < 16BSOFT.BF
+
+
+Here is a list of key tricks, that I used to get maximum performance out of Bit Doubler: 
+
+- I used loader routine, that removes comments before executing and converts BF code to internal format. In the internal format numbers 1-8 are used for commands and zero is used to terminate execution. This is because handling small numbers is much more effective than handling large numbers in BF. 
+
+- I used special IF (x)=0 stucture like this: >+<[>-]>[THEN >] to avoid slow byte copying loops. (Command backup etc.) 
+
+- I used 3 bytes for each program element to get maximum speed. Using less would have caused program it self get more slow and complex and using more would have slowed down memory seek. For program memory I used 2 bytes for each element. 
+
+- Data is not transferred between memory and program. In "[" command I only move Z flag. (Value in memory is more likely to be NZ and "0" is faster to move than "1") 
+
+
+			    ,_____.
+		    _=_=_=_=!_MSX_!=_=_=_=_=_=_=_=_,
+		   ! A1GT ~--- - I  ( o o o o o o )i
+		  /--------------------------------`,
+		 / .::::::::::::::::::::::;::;	::::.,
+		/ :::.:.:.:::____________:::::!.  -=- `,
+		~======================================
+		                NYYRIKKI
+
