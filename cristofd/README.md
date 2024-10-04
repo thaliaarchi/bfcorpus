@@ -1,6 +1,8 @@
 # Brainfuck programs by Daniel B Cristofani
 
 Brainfuck programs written by Daniel B Cristofani and posted on [brainfuck.org](https://www.brainfuck.org/).
+It was previously hosted at [hevanet.com/cristofd/brainfuck](https://web.archive.org/web/20210309194420/http://www.hevanet.com/cristofd/brainfuck/)
+and, before that, [cs.pdx.edu/~cristofd](https://web.archive.org/web/20021208180726/http://www.cs.pdx.edu/~cristofd/).
 
 - [bsort.b](https://www.brainfuck.org/bsort.b): A bubble sort program
 - [collatz.b](https://www.brainfuck.org/collatz.b): A mathematical function
