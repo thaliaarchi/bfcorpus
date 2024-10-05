@@ -7,6 +7,7 @@
 - https://www.brainfuck.org/bfcc1.txt
 - https://web.archive.org/web/20200203161446/http://www.hevanet.com/cristofd/brainfuck/bfcc1.txt
 - http://lvogel.free.fr/bf.html
+- http://lvogel.free.fr/bf/vogel.gif
 - http://cl-informatik.uibk.ac.at/users/bf3/bfgolf/bfcc1/
 - http://cl-informatik.uibk.ac.at/users/bf3/bfgolf/reverse.html
 - http://www.inf.tu-dresden.de/~bf3/bfgolf/bfcc1/
@@ -15,6 +16,11 @@ This competition was organized by Keymaker.
 It was open through 2004-10-14.
 MD5 digests are computed from programs with comments removed, except for those
 marked with an \*, which have a letter appended to disambiguate.
+
+Laurent Vogel won 1st, 2nd, and 3rd place, and was awarded this GIF by Keymaker
+to put on their site:
+
+![1st, 2nd and 3rd place in BFCC "reversing"](vogel.gif)
 
 TODO: I removed Bertram's header comments. Verify whether they counted for
 scoring and, if not, reintroduce them.
