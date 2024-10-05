@@ -3,6 +3,7 @@
 - https://web.archive.org/web/20050214232202/http://info1.info.tampere.fi:80/~lhetuhe/bfcc/
 - https://web.archive.org/web/20041119063025/http://info1.info.tampere.fi:80/~lhetuhe/bfcc/comp1.html
 - https://web.archive.org/web/20041204185743/http://info1.info.tampere.fi:80/~lhetuhe/bfcc/bfcc1.txt
+- http://info1.info.tampere.fi/~lhetuhe/bfcc/2.txt (not archived)
 - https://www.brainfuck.org/bfcc1.txt
 - https://web.archive.org/web/20200203161446/http://www.hevanet.com/cristofd/brainfuck/bfcc1.txt
 - http://lvogel.free.fr/bf.html
@@ -17,6 +18,9 @@ marked with an \*, which have a letter appended to disambiguate.
 
 TODO: I removed Bertram's header comments. Verify whether they counted for
 scoring and, if not, reintroduce them.
+
+TODO: Verify the input data (2.txt). It has the wrong length (1384 bytes)
+instead of the expected 1442 bytes.
 
 | Source submission (UTC) | Author               | Size       | Source                  | MD5                                | Note |
 | ----------------------- | -------------------- | ---------- | ----------------------- | ---------------------------------- | ---- |

@@ -147,7 +147,7 @@ in 2005 which received no submissions.
 - count9to0.b [^count9to0.b]: Outputs numbers starting from 9 to 0, with a
   line-feed after each number.
 
-[^count9to0.b]: From the [input data](http://web.archive.org/web/20041204185743/http://info1.info.tampere.fi:80/~lhetuhe/bfcc/bfcc1.txt)
-  of Brainfuck Component Competition 1: Reverse, which was organized by Keymaker
+[^count9to0.b]: From the [input data](../bfgolf/bfcc1/2.txt) of Brainfuck
+  Component Competition 1: Reverse, which was organized by Keymaker
 
 License: None

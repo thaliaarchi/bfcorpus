@@ -1,0 +1,60 @@
+HELLO EARTHLINGS
+HELLO EARTHLING
+HELLO EARTHLIN
+HELLO EARTHLI
+HELLO EARTHL
+HELLO EARTH
+
+This is very random. Like the following code:
++[>+>+-<-<]
+Though, it doesn't do anything random..
+
+I wAnT tO tHaNk EvErYoNe FoR tAkInG a PaRt In ThE fIrSt
+bRaInFuCk CoMpOnEnT cOmPeTiTiOn, ReVeRsInG.
+hOpEfUlLy MoRe Is CoMiNg In ThE fUtUrE.
+
+01234567890123456789012345678901234567890123456789
+
+Some links:
+Google - http://www.google.com/
+Opera - http://www.opera.com/
+Firefox - http://www.firefox.com/
+(Yeah, like someone didn't know those already..)
+
+7h3r3 15 n0 r3450n f0r 4ny 1nd1v1du4l 70 h4v3 4 c0mpu73r 1n h15 h0m3.
+-- K3nn37h H. 0l50n
+
+SCOOTER RULES!
+
+Is there 1000 characters already? I'm getting bored.
+Ok, let's try to find some more stuff here.. Hmmm..
+
+Urban Müller is genius!
+
+This file starts to annoy me!
+
+(?(?((?(?(((?(?(?(?(?(((????(?????))??))??))???)???)?)))??))?))?)
+That would make up a nice esoteric programming language.
+Though, that piece is just as random as everything other in this file.
+
+And something to fill up some more space.
+
+AAAAA00000
+BBBBB11111
+CCCCC22222
+DDDDD33333
+EEEEE44444
+FFFFF55555
+
+And finally a small brainfuck program I just made. It just outputs
+numbers starting from 9 to 0, with a line-feed after each number.
+  ++++++++++
+  [
+    -
+    [>+>+<<-]>[<+>-]
+    ++++++[>++++++++<-]
+    >.[-]<++++++++++.[-]<
+  ]
+
+That's all, hopefully you had fun!
+Yay!
