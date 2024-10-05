@@ -144,5 +144,10 @@ in 2005 which received no submissions.
   terminating, always increasing the number. Numbers in sequences are separated
   by a comma and space, and the actual sequences separated by a new-line. It was
   built to be fast, to some extent, and it does seem quite fast.
+- count9to0.b [^count9to0.b]: Outputs numbers starting from 9 to 0, with a
+  line-feed after each number.
+
+[^count9to0.b]: From the [input data](http://web.archive.org/web/20041204185743/http://info1.info.tampere.fi:80/~lhetuhe/bfcc/bfcc1.txt)
+  of Brainfuck Component Competition 1: Reverse, which was organized by Keymaker
 
 License: None
