@@ -7,5 +7,6 @@ Brainfuck page. Programs from other sources are not yet included.
 - [bitdbl.bf](https://sange.fi/esoteric/brainfuck/impl/interp/bitdbl.bf) and
   [bitdbl.txt](https://sange.fi/esoteric/brainfuck/impl/interp/bitdbl.txt):
   [Bit Doubler](https://www.iwriteiam.nl/Ha_vs_bf_inter.html#BD)
+- ../bfgolf/bfgolf2/69nyyrikki.b: Entry in [Brainfuck Golf contest 2](../bfgolf/bfgolf2/README.md)
 
 License: None

@@ -54,5 +54,6 @@ and, before that, [cs.pdx.edu/~cristofd](https://web.archive.org/web/20021208180
   character) count utility
 - [xmastree.b](https://www.brainfuck.org/xmastree.b): Outputs an ASCII Christmas
   tree
+- ../bfgolf/bfgolf2/50daniel.b: Entry in [Brainfuck Golf contest 2](../bfgolf/bfgolf2/README.md)
 
 License: [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/)
