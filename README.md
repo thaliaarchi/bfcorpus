@@ -13,6 +13,7 @@ This is a collection of Brainfuck programs written by various authors.
 - [iwriteiam](iwriteiam/README.md): Programs by Frans Faase
 - [keymaker](keymaker/README.md): Programs by Keymaker
 - [kiwec](kiwec/README.md): wc program by kiwec
+- [lvogel](lvogel/README.md): Programs by Laurent Vogel
 - [makenowjust](makenowjust/README.md): Quines by TSUYUSATO Kitsune
 - [none1](none1/README.md): Programs by None1
 - [nyyrikki](nyyrikki/README.md): Programs by NYYRIKKI
