@@ -1,9 +1,7 @@
-[
-  Program length: 7221.
-  Commands executed: 4311994.
-  Memory used: 1390.
-  Score: 43280303056860.
-]
+Program length: 7221
+Commands executed: 4311994
+Memory used: 1390
+Score: 43280303056860
 
 >,[>,]<[<]
 #

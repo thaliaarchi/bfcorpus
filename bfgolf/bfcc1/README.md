@@ -15,6 +15,9 @@ It was open through 2004-10-14.
 MD5 digests are computed from programs with comments removed, except for those
 marked with an \*, which have a letter appended to disambiguate.
 
+TODO: I removed Bertram's header comments. Verify whether they counted for
+scoring and, if not, reintroduce them.
+
 | Source submission (UTC) | Author               | Size       | Source                  | MD5                                | Note |
 | ----------------------- | -------------------- | ---------- | ----------------------- | ---------------------------------- | ---- |
 | 2004-10-16 00:20        | Jeffrey Lee          | 133 bytes  | 133jeffrey.b            | 8631c791b5f534b21e4c3c7e1ac75c69   |      |
