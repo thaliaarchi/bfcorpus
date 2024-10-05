@@ -2,6 +2,9 @@
 
 Brainfuck programs written by Keymaker and published at [bf-hacks.org](https://web.archive.org/web/20120213092039/http://www.bf-hacks.org/).
 
+They also organized a Brainfuck [competition](https://sourceforge.net/p/brainfuck/discussion/201037/thread/edfdc41a/)
+in 2005, but it received no submissions.
+
 - [digitalr.b](https://web.archive.org/web/20120214115111/http://www.bf-hacks.org/hacks/digitalr.b):
   Calculates the digital root of any given non-negative integer and then prints
   it out along with a new-line. Give the input as digits (0123456789) and use no
