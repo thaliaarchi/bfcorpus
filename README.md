@@ -5,6 +5,7 @@ This is a collection of Brainfuck programs written by various authors.
 - [bfgolf](bfgolf/README.md): Brainfuck Golf and Brainfuck Component Competition
 - [boehm](boehm/README.md): P′′ programs by Corrado Böhm
 - [breadbox](breadbox/README.md): Programs by Brian Raiter
+- [calamari](calamari/README.md): Programs by Jeffry Johnston
 - [cristofd](cristofd/README.md): Programs by Daniel B Cristofani
 - [cybis](cybis/README.md): Sudoku program by Cybis
 - [esofiles](esofiles.md): Programs in The Esoteric File Archive
