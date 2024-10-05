@@ -54,6 +54,8 @@ here in other directories. Programs testing/cristofd-\*.b do not include the
 comments from ../cristofd/tests/tests.b.orig, unlike the programs in
 ../cristofd/tests/.
 
+- Brian Raiter:
+  testing/Factor.b -> ../breadbox/factor.b
 - Daniel B Cristofani:
   - testing/Collatz.b -> ../cristofd/collatz.b
   - testing/cristofd-30000.b -> ../cristofd/tests/cell30000.b
@@ -81,7 +83,6 @@ comments from ../cristofd/tests/tests.b.orig, unlike the programs in
 - testing/chess.b by unattributed
 - testing/Euler1{,-orig}.b by James Stanley
 - testing/Euler5{,-orig}.b by Eevee
-- testing/Factor.b by Brian Raiter
 - testing/fibint.b by itchyny
 - testing/Golden.b by unattributed
 - testing/Hanoi.b by Clifford Wolf
