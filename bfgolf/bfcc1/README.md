@@ -59,9 +59,11 @@ marked with an \*, which have a letter appended to disambiguate.
 | 2004-10-25 17:35        | Bertram Felgenhauer  | 598 bytes  | 598bertram.b [^bertram] | *N/A (Not competing)*              |      |
 | 2004-10-25 17:35        | Bertram Felgenhauer  | 391 bytes  | 391bertram.b [^bertram] | *N/A (Not competing)*              |      |
 | 2004-10-25 17:35        | Bertram Felgenhauer  | 379 bytes  | 379bertram.b [^bertram] | *N/A (Not competing)*              |      |
+| 2004-10-25 17:35        | Bertram Felgenhauer  | 7221 bytes | [7221bertram.b]         | *N/A (Not competing)*              |      |
 | *Not submitted*         | Dean Scarff          | 67 bytes   | *N/A*                   | 4756bd1d894f28b86395d68c0652cdde   |      |
 
 [476laurent.b]: http://lvogel.free.fr/rev476bf.txt
+[7221bertram.b]: http://cl-informatik.uibk.ac.at/users/bf3/bfgolf/bfcc1/reverse.long
 [^bertram]: Split from bertram_scratch.b.orig from <http://cl-informatik.uibk.ac.at/users/bf3/bfgolf/bfcc1/reverse.b>,
   which was formerly hosted at <http://www.inf.tu-dresden.de/~bf3/bfgolf/bfcc1/reverse.b>
   (dead, not archived)
