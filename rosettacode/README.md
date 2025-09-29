@@ -12,3 +12,5 @@ Not all programs are included.
   [5](https://rosettacode.org/wiki/User_talk:Connex)]
 
 License: [GNU Free Documentation License, Version 1.2](https://rosettacode.org/wiki/Rosetta_Code:Copyrights)
+
+TODO: Add all programs, processed from a wiki dump.
