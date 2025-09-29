@@ -11,6 +11,7 @@
 - http://cl-informatik.uibk.ac.at/users/bf3/bfgolf/bfcc1/
 - http://cl-informatik.uibk.ac.at/users/bf3/bfgolf/reverse.html
 - http://www.inf.tu-dresden.de/~bf3/bfgolf/bfcc1/
+- https://sourceforge.net/p/brainfuck/discussion/201037/thread/d21e9cca/
 
 This competition was organized by Keymaker.
 It was open through 2004-10-14.

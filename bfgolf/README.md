@@ -8,3 +8,5 @@
 - Brainfuck Component Competition
   - [Competition 1: Reverse](bfcc1/README.md)
   - [Competition 2: Logical Calculator](bfcc2/README.md)
+
+TODO: Scrape all SourceForge discussions
