@@ -25,6 +25,7 @@ This is a collection of Brainfuck programs written by various authors.
 - [rosettacode](rosettacode/README.md): Programs from Rosetta Code
 - [rqu1](rqu1/README.md): AES-128 program by rqu1
 - [rune](rune/README.md): Programs by Rune Berge
+- [ultrabear](ultrabear/README.md): Bee Movie program by Alex Hall
 - [umueller](umueller/README.md): Programs from the original distribution by
   Urban Müller
 - [wikipedia](wikipedia/README.md): Programs from Wikipedia
