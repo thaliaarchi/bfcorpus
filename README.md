@@ -11,6 +11,7 @@ This is a collection of Brainfuck programs written by various authors.
 - [cybis](cybis/README.md): Sudoku program by Cybis
 - [esofiles](esofiles.md): Programs in The Esoteric File Archive
 - [esolang](esolang/README.md): Programs from the Esolang wiki
+- [eterevsky](eterevsky/README.md): Busy beaver programs by Oleg Eterevsky
 - [iwriteiam](iwriteiam/README.md): Programs by Frans Faase
 - [keymaker](keymaker/README.md): Programs by Keymaker
 - [kiwec](kiwec/README.md): wc program by kiwec
