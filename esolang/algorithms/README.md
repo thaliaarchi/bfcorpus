@@ -1,7 +1,7 @@
 # Brainfuck algorithms on the Esolang wiki
 
 The programs on the [Brainfuck algorithms](https://esolangs.org/wiki/Brainfuck_algorithms)
-page. These programs are current as of revision [2024-09-18 04:10:13](https://esolangs.org/w/index.php?title=Brainfuck_algorithms&oldid=139691)
+page. These programs are current as of revision [2025-09-30 02:09:58](https://esolangs.org/w/index.php?title=Brainfuck_algorithms&oldid=165372)
 and authors are credited when attributed in the text.
 
 In programs that use placeholders for shifts or constants, I have inserted
@@ -77,7 +77,9 @@ do not have a corresponding .b file.
   bool/not_assign2.b by [Sunjay Varma](https://esolangs.org/wiki/User:Sunjay),
   bool/not_assign3.b,
   bool/not_assign4.b by [Yuval Meshorer](https://esolangs.org/wiki/User:YuvalM),
-  bool/not_assign5.b by User:A
+  bool/not_assign5.b by User:A,
+  bool/not_assign6.b by [tommyaweosme](https://esolangs.org/wiki/User:Tommyaweosme),
+  bool/not_assign7.b by User:Waso
 - [y = not x (boolean, logical)](https://esolangs.org/wiki/Brainfuck_algorithms#y_=_not_x_(boolean,_logical)):
   bool/not.b by [FSHelix](https://esolangs.org/wiki/User:FSHelix)
 - [x´ = x and y (boolean, logical)](https://esolangs.org/wiki/Brainfuck_algorithms#x%C2%B4_=_x_and_y_(boolean,_logical)):
@@ -127,12 +129,13 @@ do not have a corresponding .b file.
 - [Modulo](https://esolangs.org/wiki/Brainfuck_algorithms#Modulo):
   math/mod{1,2}.b
 - [Print value of cell x as number (8-bit)](https://esolangs.org/wiki/Brainfuck_algorithms#Print_value_of_cell_x_as_number_(8-bit)):
-  io/print_decimal.b by itchyny
+  io/print_decimal.b by itchyny,
+  io/print_decimal_explain.b by User:NiekvD
 - [Print value of cell x as number for ANY sized cell (eg 8bit, 100000bit etc)](https://esolangs.org/wiki/Brainfuck_algorithms#Print_value_of_cell_x_as_number_for_ANY_sized_cell_(eg_8bit,_100000bit_etc)):
   io/print_decimal_any_size{1,2}.b
 - [Input a decimal number](https://esolangs.org/wiki/Brainfuck_algorithms#Input_a_decimal_number):
   io/read_decimal1.b by Urban Müller,
-  io/read_decimal{2,3}.b by [Tommyaweosme](https://esolangs.org/wiki/User:Tommyaweosme),
+  io/read_decimal{2,3}.b by [tommyaweosme](https://esolangs.org/wiki/User:Tommyaweosme),
 - [Count up with step x, from y to infinity](https://esolangs.org/wiki/Brainfuck_algorithms#Count_up_with_step_x,_from_y_to_infinity):
   control/loop_stride.b
 - [while(c=getchar()!=X)](https://esolangs.org/wiki/Brainfuck_algorithms#while(c=getchar()!=X)):
