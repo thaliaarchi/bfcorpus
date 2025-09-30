@@ -59,11 +59,11 @@ do not have a corresponding .b file.
 - [x = y(z) (1-d array) (1 cell/array element)](https://esolangs.org/wiki/Brainfuck_algorithms#x_=_y(z)_(1-d_array)_(1_cell/array_element)):
   array/read_array_1-cell.b by [Tritonio](https://esolangs.org/wiki/User:Tritonio)
 - [x´ = x == y](https://esolangs.org/wiki/Brainfuck_algorithms#x%C2%B4_=_x_==_y):
-  compare/eq1_assign.b by [Jeffry Johnston](https://esolangs.org/wiki/User:Calamari),
-  compare/eq2_assign.b
+  compare/eq_assign1.b by [Jeffry Johnston](https://esolangs.org/wiki/User:Calamari),
+  compare/eq_assign2.b
 - [x´ = x != y](https://esolangs.org/wiki/Brainfuck_algorithms#x%C2%B4_=_x_!=_y):
-  compare/ne1_assign.b by [Jeffry Johnston](https://esolangs.org/wiki/User:Calamari),
-  compare/ne2_assign.b by [Yuval Meshorer](https://esolangs.org/wiki/User:YuvalM)
+  compare/ne_assign1.b by [Jeffry Johnston](https://esolangs.org/wiki/User:Calamari),
+  compare/ne_assign2.b by [Yuval Meshorer](https://esolangs.org/wiki/User:YuvalM)
 - [x´ = x < y](https://esolangs.org/wiki/Brainfuck_algorithms#x%C2%B4_=_x_%3C_y):
   compare/lt_assign.b by Ian Kelly
 - [x´ = x <= y](https://esolangs.org/wiki/Brainfuck_algorithms#x%C2%B4_=_x_%3C=_y):
@@ -73,11 +73,11 @@ do not have a corresponding .b file.
 - [z = sign(x-y)](https://esolangs.org/wiki/Brainfuck_algorithms#z_=_sign(x-y)):
   compare/cmp_nowrap.b by [quintopia](https://esolangs.org/wiki/User:Quintopia)
 - [x´ = not x (boolean, logical)](https://esolangs.org/wiki/Brainfuck_algorithms#x%C2%B4_=_not_x_(boolean,_logical)):
-  bool/not1_assign.b by [Jeffry Johnston](https://esolangs.org/wiki/User:Calamari),
-  bool/not2_assign.b by [Sunjay Varma](https://esolangs.org/wiki/User:Sunjay),
-  bool/not3_assign.b,
-  bool/not4_assign.b by [Yuval Meshorer](https://esolangs.org/wiki/User:YuvalM),
-  bool/not5_assign.b by User:A
+  bool/not_assign1.b by [Jeffry Johnston](https://esolangs.org/wiki/User:Calamari),
+  bool/not_assign2.b by [Sunjay Varma](https://esolangs.org/wiki/User:Sunjay),
+  bool/not_assign3.b,
+  bool/not_assign4.b by [Yuval Meshorer](https://esolangs.org/wiki/User:YuvalM),
+  bool/not_assign5.b by User:A
 - [y = not x (boolean, logical)](https://esolangs.org/wiki/Brainfuck_algorithms#y_=_not_x_(boolean,_logical)):
   bool/not.b by [FSHelix](https://esolangs.org/wiki/User:FSHelix)
 - [x´ = x and y (boolean, logical)](https://esolangs.org/wiki/Brainfuck_algorithms#x%C2%B4_=_x_and_y_(boolean,_logical)):
