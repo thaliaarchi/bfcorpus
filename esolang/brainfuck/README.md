@@ -1,7 +1,7 @@
-# Brainfuck algorithms on the Esolang wiki
+# Brainfuck on the Esolang wiki
 
 The programs on the [brainfuck](https://esolangs.org/wiki/Brainfuck) page. These
-programs are current as of revision [2024-09-17 06:56:04](https://esolangs.org/w/index.php?title=Brainfuck&oldid=139564)
+programs are current as of revision [2025-09-30 02:48:16](https://esolangs.org/w/index.php?title=Brainfuck&oldid=165373)
 and authors are credited when attributed in the text.
 
 - [Hello, World!](https://esolangs.org/wiki/Brainfuck#Hello,_World!):
@@ -20,8 +20,14 @@ and authors are credited when attributed in the text.
   cell_size.b
 - [Looping counter](https://esolangs.org/wiki/Brainfuck#Looping_counter):
   looping_counter.b
-- [Truth-machine (kinda)](https://esolangs.org/wiki/Brainfuck#Truth-machine_(kinda)):
-  truth_machine.b
+- [Truth-machine](https://esolangs.org/wiki/Brainfuck#Truth-machine):
+  truth_machine/truth_machine_kinda.old.b [old],
+  truth_machine/truth_machine.b by unknown and [Ractangle](https://esolangs.org/wiki/User:Ractangle) [[edit](https://esolangs.org/w/index.php?title=Brainfuck&diff=prev&oldid=156122)],
+  truth_machine/truth_machine_alt.b by [RixTheTyrunt](https://esolangs.org/wiki/User:RixTheTyrunt) [[add](https://esolangs.org/w/index.php?title=Brainfuck&diff=prev&oldid=163648), [edit](https://esolangs.org/w/index.php?title=Brainfuck&diff=prev&oldid=163692)]
+- [XKCD Random Number](https://esolangs.org/wiki/Brainfuck#XKCD_Random_Number):
+  xkcd_random.b by [Fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff](https://esolangs.org/wiki/User:Fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff) [[add](https://esolangs.org/w/index.php?title=Brainfuck&diff=prev&oldid=144350)]
+- [Quine](https://esolangs.org/wiki/Brainfuck#Quine):
+  quine.b by Erik Bosman [[add](https://esolangs.org/w/index.php?title=Brainfuck&diff=prev&oldid=147720)]
 - [Conventions / Implementation issues / Memory and wrapping](https://esolangs.org/wiki/Brainfuck#Memory_and_wrapping):
   print_brainfuck.b
 
