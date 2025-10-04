@@ -9,6 +9,7 @@ This is a collection of Brainfuck programs written by various authors.
 - [copy](copy/README.md): Programs by copy
 - [cristofd](cristofd/README.md): Programs by Daniel B Cristofani
 - [cybis](cybis/README.md): Sudoku program by Cybis
+- [cwfitzgerald](cwfitzgerald/README.md): Programs by Connor Fitzgerald
 - [esofiles](esofiles.md): Programs in The Esoteric File Archive
 - [esolang](esolang/README.md): Programs from the Esolang wiki
 - [eterevsky](eterevsky/README.md): Busy beaver programs by Oleg Eterevsky
