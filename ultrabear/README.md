@@ -3,7 +3,8 @@
 A program by Alex Hall aka UltraBear to print the script of *Bee Movie* (2007).
 It was generated with [asc_bf.py](https://github.com/ultrabear/bfi/blob/main/asc_bf.py),
 which encodes each character as the difference from the mean of all characters
-in the text, and aims to impede optimizations with its large size.
+in the text, and aims to impede optimizations with its large size. It is
+succeeded by [asc_bf](https://github.com/ultrabear/asc_bf), written in Rust.
 
 - [examples/beemovie.bf](https://github.com/ultrabear/bfi/blob/main/examples/beemovie.bf)
 
