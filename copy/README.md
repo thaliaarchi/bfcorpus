@@ -17,6 +17,7 @@ License: None
 ## Third-party
 
 - [calculator.bf](https://copy.sh/brainfuck/prog/calculator.bf) -> [../antosser/calculator.bf](../antosser/calculator.bf)
+- [cellsize.bf](https://copy.sh/brainfuck/prog/cellsize.bf) -> [../esolang/brainfuck/cell_size.b](../esolang/brainfuck/cell_size.b)
 - [dbf2c.b](https://copy.sh/brainfuck/prog/dbf2c.b) -> [../cristofd/dbf2c.b](../cristofd/dbf2c.b)
 - [dquine.b](https://copy.sh/brainfuck/prog/dquine.b) -> [../cristofd/dquine.b](../cristofd/dquine.b)
 - [numwarp.b](https://copy.sh/brainfuck/prog/numwarp.b) -> [../cristofd/numwarp.old4.b](../cristofd/numwarp.old4.b)
@@ -28,7 +29,6 @@ License: None
 TODO:
 - [beer.b](https://copy.sh/brainfuck/prog/beer.b)
 - [bockbeer.b](https://copy.sh/brainfuck/prog/bockbeer.b)
-- [cellsize.bf](https://copy.sh/brainfuck/prog/cellsize.bf)
 - [char.bf](https://copy.sh/brainfuck/prog/char.bf)
 - [hanoi.bf](https://copy.sh/brainfuck/prog/hanoi.bf)
 - [hellom.bf](https://copy.sh/brainfuck/prog/hellom.bf)
