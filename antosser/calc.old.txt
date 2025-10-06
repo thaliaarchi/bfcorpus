@@ -1,0 +1,88 @@
+var a
+var b
+var operation
+
+input
+print input
+toint input
+multiply input a 10
+input
+print input
+toint input
+move input a
+
+input operation
+print operation
+
+input
+print input
+toint input
+multiply input b 10
+input
+print input
+toint input
+move input b
+
+def space
+def newl
+
+#if operation letter =
+  space
+  #if a var b
+    printletter t
+    printletter r
+    printletter u
+    printletter e
+  #else
+    printletter f
+    printletter a
+    printletter l
+    printletter s
+    printletter e
+  #endelse
+#else
+  var result
+  #if operation letter +
+    move a result
+    move b result
+  #else
+    #if operation letter *
+      #while a
+        add a -1
+        copy b result
+      #endwhile
+    #else
+      #if operation letter -
+        move a result
+        #while b
+          add b -1
+          add result -1
+        #endwhile
+      #else
+        #if operation letter /
+          var i
+          copy b i
+          #while a
+            add a -1
+            add i -1
+            #if0 i
+              copy b i
+              add result 1
+            #endif
+          #endwhile
+        #endif
+      #endelse
+    #endelse
+  #endelse
+  
+  space
+  printletter =
+  space
+  todec result
+  printdec one ten hun
+#endelse
+
+newl
+newl
+printletter :
+printletter )
