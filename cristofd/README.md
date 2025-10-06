@@ -32,6 +32,12 @@ and, before that, [cs.pdx.edu/~cristofd](https://web.archive.org/web/20021208180
 - [life.b](https://www.brainfuck.org/life.b): Conway's Game of Life
 - [numwarp.b](https://www.brainfuck.org/numwarp.b): A number...obfuscator?
   Prettifier? ([sample output](https://www.brainfuck.org/numwarp.png))
+  - Old versions:
+    [numwarp.old4.b](https://web.archive.org/web/20041020003536/http://www.hevanet.com/cristofd/brainfuck/numwarp.b),
+    [numwarp.old3.b](https://web.archive.org/web/20040604084851/http://www.hevanet.com/cristofd/brainfuck/numwarp.b),
+    [numwarp.old2.b](https://web.archive.org/web/20030813053449/http://www.hevanet.com/cristofd/brainfuck/numwarp.b),
+    [numwarp.old1.b](https://web.archive.org/web/20030421150848/http://www.hevanet.com/cristofd/brainfuck/numwarp.b),
+    [numwarp.old0.b](https://web.archive.org/web/20021225234032/http://www.hevanet.com/cristofd/brainfuck/numwarp.b)
 - [qsort.b](https://www.brainfuck.org/qsort.b): A Quicksort program
 - [random.b](https://www.brainfuck.org/random.b): A random number generator
   [based on](https://www.brainfuck.org/random.txt) a cellular automaton
@@ -57,3 +63,5 @@ and, before that, [cs.pdx.edu/~cristofd](https://web.archive.org/web/20021208180
 - ../bfgolf/bfgolf2/50daniel.b: Entry in [Brainfuck Golf contest 2](../bfgolf/bfgolf2/README.md)
 
 License: [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/)
+
+TODO: Add old versions of all programs.
