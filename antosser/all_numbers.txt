@@ -1,0 +1,23 @@
+var i
+add i 1
+def newl
+
+#while i
+  var one
+  var hun
+  var ten
+
+  todec i one ten hun
+  tostr one
+  tostr ten
+  tostr hun
+  print hun
+  print ten
+  print one
+  clear one
+  clear ten
+  clear hun
+  newl
+
+  add i 1
+#endwhile

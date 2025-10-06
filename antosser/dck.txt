@@ -1,0 +1,141 @@
+var o
+addletter o O
+def space
+def newl
+
+space
+space
+space
+print o
+print o
+print o
+space
+space
+space
+newl
+
+space
+space
+print o
+space
+print o
+space
+print o
+space
+space
+newl
+
+space
+space
+print o
+space
+space
+space
+print o
+space
+space
+newl
+
+space
+space
+print o
+print o
+print o
+print o
+print o
+space
+space
+newl
+
+space
+space
+print o
+space
+space
+space
+print o
+space
+space
+newl
+space
+space
+print o
+space
+space
+space
+print o
+space
+space
+newl
+space
+space
+print o
+space
+space
+space
+print o
+space
+space
+newl
+space
+space
+print o
+space
+space
+space
+print o
+space
+space
+newl
+space
+space
+print o
+space
+space
+space
+print o
+space
+space
+newl
+space
+space
+print o
+space
+space
+space
+print o
+space
+space
+newl
+
+space
+print o
+print o
+print o
+space
+print o
+print o
+print o
+space
+newl
+
+print o
+space
+space
+space
+print o
+space
+space
+space
+print o
+newl
+
+space
+print o
+print o
+print o
+space
+print o
+print o
+print o
+space
