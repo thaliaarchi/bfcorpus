@@ -31,6 +31,7 @@ This is a collection of Brainfuck programs written by various authors.
 - [rkusnery](rkusnery/README.md): Programs by Ryan Kusnery
 - [rqu1](rqu1/README.md): AES-128 program by rqu1
 - [rune](rune/README.md): Programs by Rune Berge
+- [thaliaarchi](thaliaarchi/README.md): Programs by Thalia Archibald
 - [ultrabear](ultrabear/README.md): Bee Movie program by Alex Hall
 - [umueller](umueller/README.md): Programs from the original distribution by
   Urban Müller
