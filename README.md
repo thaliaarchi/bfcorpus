@@ -27,6 +27,7 @@ This is a collection of Brainfuck programs written by various authors.
 - [rdebath](rdebath/README.md): Programs by Robert de Bath
 - [regehr](regehr/README.md): Test program from John Regehr
 - [rosettacode](rosettacode/README.md): Programs from Rosetta Code
+- [rkusnery](rkusnery/README.md): Programs by Ryan Kusnery
 - [rqu1](rqu1/README.md): AES-128 program by rqu1
 - [rune](rune/README.md): Programs by Rune Berge
 - [ultrabear](ultrabear/README.md): Bee Movie program by Alex Hall
