@@ -21,6 +21,7 @@ This is a collection of Brainfuck programs written by various authors.
 - [kiwec](kiwec/README.md): wc program by kiwec
 - [lvogel](lvogel/README.md): Programs by Laurent Vogel
 - [makenowjust](makenowjust/README.md): Quines by TSUYUSATO Kitsune
+- [mitxela](mitxela/README.md): Tic tac toe AI by mitxela
 - [none1](none1/README.md): Programs by None1
 - [nyyrikki](nyyrikki/README.md): Programs by NYYRIKKI
 - [pipevm](pipevm/README.md): Pong and sh programs using the PipeVM protocol by
