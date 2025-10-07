@@ -10,8 +10,8 @@ This is a collection of Brainfuck programs written by various authors.
 - [calamari](calamari/README.md): Programs by Jeffry Johnston
 - [copy](copy/README.md): Programs by copy
 - [cristofd](cristofd/README.md): Programs by Daniel B Cristofani
-- [cybis](cybis/README.md): Sudoku program by Cybis
 - [cwfitzgerald](cwfitzgerald/README.md): Programs by Connor Fitzgerald
+- [cybis](cybis/README.md): Sudoku program by Cybis
 - [ebosman](ebosman/README.md): Mandelbrot set and others by Erik Bosman
 - [esofiles](esofiles.md): Programs in The Esoteric File Archive
 - [esolang](esolang/README.md): Programs from the Esolang wiki
@@ -28,8 +28,8 @@ This is a collection of Brainfuck programs written by various authors.
   Luis Fernando Estrozi
 - [rdebath](rdebath/README.md): Programs by Robert de Bath
 - [regehr](regehr/README.md): Test program from John Regehr
-- [rosettacode](rosettacode/README.md): Programs from Rosetta Code
 - [rkusnery](rkusnery/README.md): Programs by Ryan Kusnery
+- [rosettacode](rosettacode/README.md): Programs from Rosetta Code
 - [rqu1](rqu1/README.md): AES-128 program by rqu1
 - [rune](rune/README.md): Programs by Rune Berge
 - [thaliaarchi](thaliaarchi/README.md): Programs by Thalia Archibald
