@@ -1,0 +1,134 @@
+// Adding
+
+#define add_reversed_ALU(s0, s1, d) \
+	from(rail, to, carry) [- \
+						  from(carry, to, d) + \
+						  from(d, to, s0) [- \
+										  from(s0, to, d) - \
+										  from(d, to, carry) \
+										  previous_record + next_record \
+										  from(carry, to, s1) [- \
+															  from(s1, to, d) + from(d, to, s1) \
+															  ] \
+										  from(s1, to, s0) \
+										  ] \
+						  from(s0, to, s1) [- \
+										   from(s1, to, d) - \
+										   from(d, to, carry) \
+										   previous_record + next_record \
+										   from(carry, to, s1) \
+										   ] \
+						  from(s1, to, carry) \
+						  ] \
+	from(carry, to, s0) [- \
+						from(s0, to, d) + \
+						from(d, to, s1) [- \
+										from(s1, to, d) - \
+										from(d, to, carry) \
+										previous_record + next_record \
+										from(carry, to, s1) \
+										] \
+						from(s1, to, s0) \
+						] \
+	from(s0, to, s1) [- \
+					 from(s1, to, d) + \
+					 from(d, to, s1) \
+					 ] \
+	from(s1, to, rail) previous_record
+
+
+// CLEARS s0 AND s1 !!!, carry and d must be cleared
+#define add(s0, s1, d) \
+	to_end previous_record \
+	[ add_reversed_ALU(s0, s1, d) ]
+
+#define add_to_ALU(s, d) \
+	while(s, decrease(s) increase(d) ) \
+	next_record
+
+#define add_to_reversed_ALU(s, d) \
+	while(s, decrease(s) increase(d) ) \
+	previous_record
+
+// CLEARS s !!!, d must be cleared
+#define add_to(s, d) \
+	next_record \
+	[ add_to_ALU(s, d) ] \
+	previous_record \
+	[ normalize_reversed_ALU(d) ]
+
+// CLEARS s !!!, d must be cleared
+#define sub_of(s, d) \
+	next_record \
+	[ negate_ALU(s) ] \
+	previous_record increase(d) \
+	[ add_to_reversed_ALU(s, d) ] \
+	next_record [ next_record ] previous_record \
+	[ normalize_reversed_ALU(d) ] \
+	decrease(d)
+ 
+// NOT WORKING !!!
+#define add_x(s0, s1, d) \
+	next_record \
+	[ add_x_ALU(s0, s1, d) ] \
+	previous_record \
+	[ normalize_reversed_ALU(d) ]
+
+#define add_x_ALU(s0, s1, d) \
+	while(carry, decrease(carry)) \
+	if_signed(s0, then, increase(d) \
+	if_signed(s1, then, increase(d) \
+	next_record
+
+// CLEARS s0 AND s1 !!!, carry and d must be cleared
+#define subtract(s0, s1, d) \
+	next_record \
+	[ negate_ALU(s1) ] \
+	previous_record \
+	from(rail, to, carry) + from(carry, to, rail) \
+	[ add_reversed_ALU(s0, s1, d) ]
+
+// CLEARS s1 !!!, carry and d must be cleared, otherwise s0*s1 will be added to d
+#define multiply(s0, s1, d) \
+	fill_register(carry) \
+	next_record \
+	while(rail, \
+		decrease(carry) \
+		if_signed_x(s0, carry, then, \
+			while(rail, \
+				decrease(rail) \
+				if_signed_x(s1, rail, then, increase(d) ) \
+				increase(rail) \
+				next_record \
+			) \
+			to_begin_of_carry \
+		) \
+		shift_right_on_carry(s1) \
+		increase(carry) \
+		next_record \
+	) \
+	previous_record [ normalize_reversed_ALU(d) ] \
+
+#define normalize_reversed_ALU(n) \
+	at(carry, clear) \
+	decrease(rail) \
+	while(n, \
+		decrease(n) \
+		increase(rail) \
+		while(carry, \
+			decrease(rail) \
+			decrease(carry) \
+			previous_record increase(n) next_record \
+		) \
+		while(rail, \
+			decrease(rail) \
+			increase(carry) \
+		) \
+	) \
+	while(carry, \
+		decrease(carry) \
+		increase(n) \
+	) \
+	increase(rail)\
+	previous_record
+

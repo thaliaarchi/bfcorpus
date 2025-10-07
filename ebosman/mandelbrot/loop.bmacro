@@ -1,0 +1,82 @@
+
+#define set_start_Y0 \
+	clear_register(Y0) \
+	set_bit(SignY0) \
+	shift_to_pos(_5) \
+	increase(Y0) \
+	next_record next_record next_record \
+	increase(Y0) \
+	to_begin
+
+#define set_start_X0 \
+	clear_register(X0) \
+	set_bit(SignX0) \
+	shift_to_pos(_4) \
+	increase(X0) \
+	shift_to_pos(_7) \
+	increase(X0) \
+	to_begin
+
+#define set_step_in_Xn \
+	clear_register(Xn) \
+	shift_to_pos(_11) \
+	increase(Xn) \
+	next_record \
+	increase(Xn) \
+	to_begin
+
+#define set_step_in_Yn \
+	clear_register(Yn) \
+	shift_to_pos(_10) \
+	increase(Yn) \
+	next_record \
+	increase(Yn) \
+	to_begin
+
+#define if_not_null(a, set, bit)\
+	to_end \
+	previous_record \
+	[ if_signed_x(a, carry, then, [ previous_record ] set_bit(bit) next_record ) previous_record ]
+
+#define next_iteration_X0 \
+	set_step_in_Xn \
+	if_signed(SignX0, then, \
+		unset_bit(SignX0) \
+		if_not_null(X0, set, SignX0) \
+	) \
+	if_signed(SignX0, then, sub_of(Xn, X0) set_bit(bitB) ) \
+	if_not_signed(SignX0, then, \
+		add_to(Xn, X0) \
+		shift_to_pos(_5) \
+		increase(Xn) \
+		[ previous_record ] \
+		which_is_greater(Xn, X0, bitB, bitC) \
+		unset_bit(bitC) \
+		shift_to_pos(_5) \
+		decrease(Xn) \
+		[ previous_record ] \
+	)
+
+#define next_iteration_Y0 \
+	set_step_in_Yn \
+	if_signed(SignY0, then, \
+		unset_bit(SignY0) \
+		if_not_null(Y0, set, SignY0) \
+	) \
+	if_signed(SignY0, then, sub_of(Yn, Y0) set_bit(bitB) ) \
+	if_not_signed(SignY0, then, \
+		add_to(Yn, Y0) \
+		shift_to_pos(_5) \
+		increase(Yn) \
+		next_record next_record next_record \
+		increase(Yn) \
+		[ previous_record ] \
+		which_is_greater(Yn, Y0, bitB, bitC) \
+		unset_bit(bitC) \
+		shift_to_pos(_5) \
+		decrease(Yn) \
+		next_record next_record next_record \
+		decrease(Yn) \
+		[ previous_record ] \
+	)
+

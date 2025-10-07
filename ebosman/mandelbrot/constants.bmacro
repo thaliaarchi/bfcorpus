@@ -1,0 +1,100 @@
+#define _Inc	+
+#define _Dec	-
+
+#define _Left	<
+#define _Right	>
+
+#define  _0(m)
+#define  _1(m)  m
+#define  _2(m)  m m
+#define  _3(m)  m m m
+#define  _4(m)  _3(m) m
+#define  _5(m)  _4(m) m
+#define  _6(m)  _5(m) m
+#define  _7(m)  _6(m) m
+#define  _8(m)  _7(m) m
+#define  _9(m)  _8(m) m
+#define _10(m)  _9(m) m
+#define _11(m) _10(m) m
+#define _12(m) _11(m) m
+#define _13(m) _12(m) m
+#define _14(m) _13(m) m
+#define _15(m) _14(m) m
+#define _16(m) _15(m) m
+#define _17(m) _16(m) m
+#define _18(m) _17(m) m
+#define _19(m) _18(m) m
+#define _20(m) _19(m) m
+#define _21(m) _20(m) m
+#define _22(m) _21(m) m
+#define _23(m) _22(m) m
+#define _24(m) _23(m) m
+#define _25(m) _24(m) m
+#define _26(m) _25(m) m
+
+#define _32(m) _24(m) _8(m)
+#define _40(m) _32(m) _8(m)
+
+#define _48(m) _24(m) _24(m)
+#define _49(m) _48(m) m
+#define _50(m) _49(m) m
+#define _52(m) _50(m) m m
+
+#define _a(n) _5( _13(n) )
+#define _b(n) _a(n) n
+#define _c(n) _b(n) n
+#define _d(n) _c(n) n
+#define _e(n) _d(n) n
+#define _f(n) _e(n) n
+#define _g(n) _f(n) n
+#define _h(n) _g(n) n
+#define _i(n) _h(n) n
+#define _j(n) _i(n) n
+#define _k(n) _j(n) n
+#define _l(n) _k(n) n
+#define _m(n) _l(n) n
+#define _n(n) _m(n) n
+#define _o(n) _n(n) n
+#define _p(n) _o(n) n
+#define _q(n) _p(n) n
+#define _r(n) _q(n) n
+#define _s(n) _r(n) n
+#define _t(n) _s(n) n
+#define _u(n) _t(n) n
+#define _v(n) _u(n) n
+#define _w(n) _v(n) n
+#define _x(n) _w(n) n
+#define _y(n) _x(n) n
+#define _z(n) _y(n) n
+
+#define record_length			_9
+#define record_length_min_1		_8
+#define record_length_min_2		_7
+#define record_length_min_3		_6
+
+#define float_length			_16
+//#define float_length			_24
+#define float_length_min_1		_23
+
+// 'registers'
+
+#define rail	_0
+#define carry	_1
+#define a		_2
+#define b		_3
+#define c		_4
+#define Xn		_5
+#define Yn		_6
+#define X0		_7
+#define Y0		_8
+
+#define SignX0	X0
+#define SignY0	Y0
+#define SignXn	Xn
+#define	SignYn	Yn
+
+#define bitA	a
+#define bitB	b
+#define bitC	c
+//#define bitY	Y0
+

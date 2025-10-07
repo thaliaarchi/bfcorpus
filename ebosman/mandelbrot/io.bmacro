@@ -1,0 +1,53 @@
+
+// Printing
+
+#define print(n) plus(n) . min(n)
+
+#define print_newline print(_10)
+
+#define print_decimal print(_48)
+
+#define print_decimal_(n) from(rail, to, n) print(_48) from(n, to, rail)
+
+#define print_float_ALU(n) \
+	n(_Right) \
+	print_decimal \
+	n(_Left) \
+	next_record 
+
+#define print_float(n) \
+	next_record [ print_float_ALU(n) ] \
+	to_begin \
+	print_newline
+
+#define printrail	print(_r) print(_a) print(_i) print(_l) print_newline print_float(rail)
+#define printcarry	print(_c) print(_a) print(_r) print(_r) print(_y) print_newline print_float(carry)
+#define printa		print(_a) print_newline print_float(a)
+#define printb		print(_b) print_newline print_float(b)
+#define printc		print(_c) print_newline print_float(c)
+#define printX0		print(_x) print(_48) print_newline print_float(X0)
+#define printXn		print(_x) print(_n)  print_newline print_float(Xn)
+#define printY0		print(_y) print(_48) print_newline print_float(Y0)
+#define printYn		print(_y) print(_n)  print_newline print_float(Yn)
+
+#define print_the_bits repeat(record_length, print_decimal _Right) previous_record print_newline
+
+// Reading
+
+#define wait_for_newline +[[-], min(_10) ]
+
+#define read_decimal , min(_48)
+
+#define read_float_ALU(n) \
+	n(_Right) \
+	read_decimal n(_Left) \
+	next_record 
+
+#define read_float(n) \
+	next_record \
+	[ read_float_ALU(n) ] \
+	to_begin \
+	wait_for_newline
+
+#define press_key\
+	(,) clear

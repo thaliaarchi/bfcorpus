@@ -1,0 +1,45 @@
+// Needs empty carry
+
+#define copy_ALU(s, d) \
+	from(rail, to, s) \
+	[- from(s, to, carry) + from(carry, to, s) ] \
+	from(s, to, carry) \
+	[- from(carry, to, s) + from(s, to, d) + from(d, to, carry) ] \
+	from(carry, to, rail) \
+	next_record
+
+#define copy(s, d) \
+	next_record \
+	[ copy_ALU(s, d) ] \
+	to_begin
+
+
+#define copy2_ALU(s, d0, d1) \
+	from(rail, to, s) \
+	[- from(s, to, carry) + from(carry, to, s) ] \
+	from(s, to, carry) \
+	[- from(carry, to, s) + from(s, to, d0) + from(d0, to, d1) + from(d1, to, carry) ] \
+	from(carry, to, rail) \
+	next_record
+
+#define copy2(s, d0, d1) \
+	next_record \
+	[ copy2_ALU(s, d0, d1) ] \
+	to_begin
+
+// Bitwise negation
+
+#define negate_ALU(n) \
+	from(rail, to, carry) + \
+	from(carry, to, n) \
+	[- from(n, to, carry) - from(carry, to, n) ] \
+	from(n, to, carry) \
+	[- from(carry, to, n) + from(n, to, carry) ] \
+	from(carry, to, rail) \
+	next_record
+
+#define negate(n) \
+	next_record \
+	[ negate_ALU(n) ] \
+	to_begin
+

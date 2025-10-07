@@ -1,0 +1,81 @@
+// Comparison
+
+#define go_back_and_set_flag(flag) \
+	to_begin \
+	set_sign(flag)
+
+// this 1 is not very pretty
+#define which_is_greater_ALU(a, b, a_is, b_is) \
+	- \
+	if_not_signed(a, then, \
+		if_signed(b, then, \
+			go_back_and_set_flag(b_is) to_end \
+			from(rail, to, carry) + from(carry, to, rail) )) \
+	if_not_signed(b, then, \
+		if_signed(a, then, \
+			go_back_and_set_flag(a_is) to_end \
+			from(rail, to, carry) clear + from(carry, to, rail) )) \
+	+ \
+	from(rail, to, carry) \
+	[- from(carry, to, rail) [ next_record ] previous_record from(rail, to, carry) ] \
+	from(carry, to, rail) \
+	next_record
+
+#define which_is_greater(a, b, a_is, b_is) \
+	next_record \
+	[ which_is_greater_ALU(a, b, a_is, b_is) ] \
+	to_begin
+
+// format: 00100.0000000000000000
+#define set_4(n) \
+	next_record \
+	next_record \
+	next_record \
+	increase(n) \
+	[ previous_record ]
+
+// format: 00010.0000000000000000
+#define set_2(n) \
+	next_record \
+	next_record \
+	next_record \
+	next_record \
+	increase(n) \
+	[ previous_record ]
+
+// format: 00001.0000000000000000
+#define set_1(n) \
+	next_record \
+	next_record \
+	next_record \
+	next_record \
+	next_record \
+	increase(n) \
+	[ previous_record ]
+
+#define shift_to_pos(n) \
+	at(carry, plus(n) ) \
+	while(carry, \
+		decrease(carry) \
+		while(carry, \
+			decrease(carry) \
+			next_record \
+			increase(carry) \
+			previous_record \
+		) \
+		next_record \
+	)
+
+// format: 00001.0100000000000000
+#define set_1dot01(n) \
+	next_record \
+	next_record \
+	next_record \
+	next_record \
+	next_record \
+	increase(n) \
+	next_record \
+	next_record \
+	increase(n) \
+	[ previous_record ]
+

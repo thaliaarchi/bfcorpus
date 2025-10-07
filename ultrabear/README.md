@@ -14,7 +14,7 @@ License: [GPL-3.0](https://github.com/ultrabear/bfi/blob/main/LICENSE)
 
 These programs included in ultrabear/bfi were taken from copy's [El Brainfuck](https://copy.sh/brainfuck/):
 
-- [examples/brot.bf](https://github.com/ultrabear/bfi/blob/main/examples/brot.bf) -> ../copy/third_party/mandelbrot.b
+- [examples/brot.bf](https://github.com/ultrabear/bfi/blob/main/examples/brot.bf) -> ../ebosman/mandelbrot/mandelbrot.b
 - [examples/hanoi.bf](https://github.com/ultrabear/bfi/blob/main/examples/hanoi.bf) -> ../copy/third_party/hanoi.bf
 - [examples/oobrain.bf](https://github.com/ultrabear/bfi/blob/main/examples/oobrain.bf) -> ../copy/third_party/oobrain.b
 - [examples/squares.bf](https://github.com/ultrabear/bfi/blob/main/examples/squares.bf) -> ../cristofd/squares.b

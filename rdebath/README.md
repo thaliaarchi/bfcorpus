@@ -71,6 +71,8 @@ comments from ../cristofd/tests/tests.b.orig, unlike the programs in
   - testing/utm.b -> ../cristofd/utm.b
 - Daniel B Cristofani and modified by Robert de Bath:
   testing/Impeccable.b -> testing/third_party/Impeccable.b
+- Erik Bosman:
+  testing/Mandelbrot.b -> ../ebosman/mandelbrot/mandelbrot.b
 - Urban Müller:
   umueller/src/\*.b -> ../umueller/
 
@@ -90,7 +92,7 @@ comments from ../cristofd/tests/tests.b.orig, unlike the programs in
 - testing/Life.b by Linus Akesson
 - testing/Long.b by unattributed
 - testing/LostKng.b by Jon Ripley
-- testing/Mandelbrot{,-extreme,-r64,-tiny}.b by Erik Bosman
+- testing/Mandelbrot-{extreme,r64,tiny}.b by Erik Bosman
 - testing/oobrain.b by Chris Rathman
 - testing/OptimTease.b by Nathan van Doorn
 - testing/PIdigits{,-orig,-as,-cp}.b by Felix Nawothnig

@@ -18,4 +18,4 @@ License: [MPL-2.0](https://github.com/cwfitzgerald/brainfuck-benchmark/blob/mast
 ## Third-party
 
 - [hanoi.b](https://github.com/cwfitzgerald/brainfuck-benchmark/blob/master/benches/hanoi.b) -> ../copy/third_party/hanoi.bf
-- [mandel.b](https://github.com/cwfitzgerald/brainfuck-benchmark/blob/master/benches/mandel.b) -> ../copy/third_party/mandelbrot.bf
+- [mandel.b](https://github.com/cwfitzgerald/brainfuck-benchmark/blob/master/benches/mandel.b) -> ../ebosman/mandelbrot/mandelbrot.b

@@ -1,0 +1,107 @@
+#define mandelbrot_cycle(maxIterations) \
+copy2(X0, Xn, a) \
+copy2(Y0, Yn, b) \
+\
+bitcopy(SignX0, SignXn) \
+\
+expand_n_clear_rail \
+\
+multiply(Xn, a, c) \
+multiply(Yn, b, c) \
+\
+shift_left4(c) \
+\
+shrink_rail \
+\
+set_4(b) \
+\
+which_is_greater(b, c, bitB, bitC) \
+\
+reset \
+repeat_x(maxIterations, bitA, bitC, \
+	count \
+	\
+	clear_register3(a,b,c) \
+	unset_bit(bitB) \
+	\
+	copy(Xn, a) \
+	shift_left(a) \
+	\
+	expand_n_clear_rail \
+	multiply(Yn, a, b) \
+	copy(Yn, a) \
+	multiply(Yn, a, c) \
+	shift_left4(c)\
+	shift_left4(b)\
+	shrink_rail\
+	\
+	copy(Y0, a) \
+	clear_register(Yn) \
+	\
+	equal_bits(SignXn, SignYn, bitC) \
+	unset_bit(SignYn) \
+	if_not_signed(bitC, then, \
+		which_is_greater(a, b, bitC, bitB)\
+		if_signed(bitC, then, subtract(a, b, Yn) unset_bit(bitC) ) \
+		if_signed(bitB, then, subtract(b, a, Yn) increase(SignYn) ) \
+	) \
+	if_signed(bitC, then, \
+		add(a, b, Yn)\
+	) \
+	unset_bit(carry) \
+	unset_bit(bitB) \
+	unset_bit(bitC) \
+	clear_register2(a,b) \
+	\
+	copy(Xn, a) \
+	expand_n_clear_rail \
+	multiply(Xn, a, b) \
+	shift_left4(b)\
+	unset_bit(SignXn) \
+	shrink_rail\
+	\
+	which_is_greater(b, c, bitB, bitC) \
+	if_signed(bitB, then, subtract(b, c, a) ) \
+	if_signed(bitC, then, subtract(c, b, a) increase(SignXn) ) \
+	\
+	clear_register3(b,c,Xn) \
+	unset_bit(bitB) \
+	unset_bit(bitC) \
+	copy(X0, b) \
+	\
+	equal_bits(SignXn, SignX0, bitC) \
+	if_not_signed(bitC, then, \
+		which_is_greater(b, a, bitB, bitC) \
+		if_signed(bitB, then, subtract(b, a, Xn) unset_bit(SignXn) bitcopy(SignX0, SignXn) ) \
+		if_signed(bitC, then, subtract(a, b, Xn) ) \
+		\
+		unset_bit(bitC)\
+	) \
+	if_signed(bitC, then, \
+		unset_bit(SignXn) bitcopy(SignX0, SignXn) \
+		add(a, b, Xn)\
+	) \
+	clear_register2(a,b) \
+	unset_bit(bitB) \
+	unset_bit(bitC) \
+	\
+	copy(Xn, a) \
+	copy(Yn, b) \
+	expand_n_clear_rail \
+	multiply(Xn, a, c) \
+	multiply(Yn, b, c) \
+	shift_left4(c) \
+	shrink_rail \
+	set_4(b) \
+	which_is_greater(b, c, bitB, bitC) \
+	\
+) \
+if_not_signed(bitC, then, \
+    print_inside_mandelbrot_set \
+) \
+while(bitC, decrease(bitC) \
+    print_outside_mandelbrot_set \
+) \
+clear_the_first_six_bits \
+clear_the_first_six_registers
+

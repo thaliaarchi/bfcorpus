@@ -1,0 +1,175 @@
+
+#define repeat(n,m) n(m)
+
+#define plus(n) repeat(n,+)
+#define min(n) repeat(n,-)
+
+#define clear [-]
+
+#define from(a, to, b) a(_Left) b(_Right)
+
+#define at(a, body) \
+	from(rail, to, a) body from(a, to, rail)
+
+#define if_signed_x(sign, tmp, then, action) \
+	from(rail, to, sign) \
+	[- from(sign, to, tmp) + from(tmp, to, sign) ] \
+	from(sign, to, tmp) \
+	[- from(tmp, to, sign) + from(sign, to, rail) action from(rail, to, tmp) ] \
+	from(tmp, to, rail)
+
+
+#define if_signed(sign, then, action) \
+	from(rail, to, sign) \
+	[- from(sign, to, rail) + from(rail, to, sign) ] \
+	from(sign, to, rail) \
+	[- from(rail, to, sign) + from(sign, to, rail) action ]
+
+#define if_not_signed(sign, then, action) \
+	+ \
+	from(rail, to, sign) \
+	[- from(sign, to, rail) - from(rail, to, sign) ] \
+	+ \
+	from(sign, to, rail) \
+	[- from(rail, to, sign) - from(sign, to, rail) action ]
+
+#define if_signed_remove(sign, then, action) \
+	from(rail, to, sign) \
+	[- from(sign, to, rail) action from(rail, to, sign) ] \
+	from(sign, to, rail)
+
+#define if_not_signed_remove(sign, then, action) \
+	+ \
+	from(rail, to, sign) \
+	[- from(sign, to, rail) - from(rail, to, sign) ]+ \
+	from(sign, to, rail) \
+	[- action ]
+
+// Signs
+
+#define set_bit(flag) \
+	from(rail, to, flag) \
+	clear + \
+	from(flag, to, rail)
+
+#define unset_bit(flag) \
+	from(rail, to, flag) \
+	clear \
+	from(flag, to, rail)
+
+
+#define set_sign(flag) \
+	from(rail, to, flag) \
+	clear + \
+	from(flag, to, rail)
+
+#define unset_sign(flag) \
+	from(rail, to, flag) \
+	clear \
+	from(flag, to, rail)
+
+// plain adding
+
+#define increase(n) \
+	from(rail, to, n) \
+	+ \
+	from(n, to, rail)
+
+#define decrease(n) \
+	from(rail, to, n) \
+	- \
+	from(n, to, rail)
+
+#define invert(n) \
+	increase(rail) \
+	while(n, \
+		decrease(n) \
+		decrease(rail) \
+	) \
+	while(rail, \
+		increase(n) \
+		decrease(rail) \
+	)
+
+#define bitcopy(a, b)\
+	while (a, decrease(a) increase(rail) ) \
+	while (rail, decrease(rail) increase(a) increase(b) )
+
+#define bitcopy_invert(a, b)\
+	while (a, decrease(a) increase(rail) ) \
+	increase(b) \
+	while (rail, decrease(rail) increase(a) decrease(b) )
+
+#define xor_bits(a, b, result) \
+	while(a, \
+		decrease(a) \
+		increase(result) \
+		increase(rail) \
+	) \
+	while(b, \
+		decrease(b) \
+		increase(result) \
+		while(rail, \
+			decrease(rail) \
+			increase(a) \
+			at(result, clear) \
+		) \
+		while(a, \
+			decrease(a) \
+			increase(rail) \
+		) \
+		increase(a) \
+	) \
+	while(a, \
+		decrease(a) \
+		increase(b) \
+	) \
+	while(rail, \
+		decrease(rail) \
+		increase(a) \
+	)
+		
+#define equal_bits(a, b, result) \
+	increase(result) \
+	while(a, \
+		decrease(a) \
+		decrease(result) \
+		increase(rail) \
+	) \
+	while(b, \
+		decrease(b) \
+		while(rail, \
+			decrease(rail) \
+			increase(a) \
+			increase(result) \
+			increase(result) \
+		) \
+		while(a, \
+			decrease(a) \
+			increase(rail) \
+		) \
+		decrease(result) \
+		increase(a) \
+	) \
+	while(a, \
+		decrease(a) \
+		increase(b) \
+	) \
+	while(rail, \
+		decrease(rail) \
+		increase(a) \
+	)
+		
+
+
+#define while(n, body) \
+	from(rail, to, n) [ from(n, to, rail) body from(rail, to, n) ] from(n, to, rail)
+
+#define repeat_x(n, i, quit_flag, body) \
+	at(i, plus(n) ) \
+	if_signed(quit_flag, then, at(i, clear) ) \
+	while(i, \
+		body \
+		decrease(i) \
+		if_signed(quit_flag, then, at(i, clear) ) \
+	)

@@ -1,0 +1,42 @@
+#include "constants.bmacro"
+#include "structure.bmacro"
+#include "rail.bmacro"
+#include "arithmetic.bmacro"
+#include "compare.bmacro"
+#include "bitwise.bmacro"
+#include "clear.bmacro"
+#include "shift.bmacro"
+#include "io.bmacro"
+
+#include "cycle.bmacro"
+#include "lowlevel.bmacro"
+#include "loop-huge.bmacro"
+
+MAIN
+
+initialize
+
+create_rail
+
+set_start_Y0
+
+set_bit(bitB)
+
+while(bitB,
+
+	set_start_X0
+
+	while(bitB,
+
+		unset_bit(bitB)
+		mandelbrot_cycle(_40)
+
+		next_iteration_X0
+	)
+	print_newline_from_rail
+
+	next_iteration_Y0
+)
+
+EXIT
+

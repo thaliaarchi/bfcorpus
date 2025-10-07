@@ -1,0 +1,61 @@
+
+// Shifting
+
+#define shift_left_ALU(n) \
+	from(rail, to, n) \
+	[- previous_record + next_record ] \
+	from(n, to, rail) \
+	next_record
+
+#define shift_left(n) \
+	next_record \
+	[ shift_left_ALU(n) ] \
+	to_begin
+
+#define shift_left4_ALU(n) \
+	from(rail, to, n) \
+	[- previous_record previous_record previous_record previous_record + next_record next_record next_record next_record ] \
+	from(n, to, rail) \
+	next_record
+
+#define shift_left4(n) \
+	next_record \
+	[ shift_left4_ALU(n) ] \
+	to_begin
+
+#define shift_right4_ALU(n) \
+	from(rail, to, n) \
+	[- next_record next_record next_record next_record + previous_record previous_record previous_record previous_record ] \
+	from(n, to, rail) \
+	previous_record
+
+#define shift_right4(n) \
+	to_end \
+	previous_record \
+	[ shift_right4_ALU(n) ]
+
+#define shift_right_ALU(n) \
+	while(n, \
+		decrease(n) \
+		next_record \
+		increase(n) \
+		previous_record \
+	) \
+	previous_record
+
+#define shift_right(n) \
+	to_end \
+	previous_record \
+	while(rail, \
+		shift_right_ALU(n) \
+	)
+
+#define shift_right_on_carry(n) \
+	to_end_of_carry \
+	previous_record \
+	while(carry, \
+		shift_right_ALU(n) \
+	) \
+	shift_right_ALU(n) \
+	next_record
+

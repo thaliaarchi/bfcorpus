@@ -1,0 +1,43 @@
+
+#define next_record repeat(record_length, _Right)
+#define previous_record repeat(record_length, _Left)
+
+#define to_end		next_record[next_record]
+#define to_begin	previous_record[previous_record]
+
+#define to_begin_of_carry \
+	from(rail, to, carry) \
+	to_begin \
+	from(carry, to, rail)
+
+#define to_end_of_carry \
+	from(rail, to, carry) \
+	to_end \
+	from(carry, to, rail)
+
+// Creating/expanding/shrinking rail
+
+#define expand_rail(n) \
+	next_record \
+	plus(n) - \
+	[[ next_record ]+[ previous_record ] next_record -]+ \
+	previous_record
+
+#define expand_n_clear_rail_(n) \
+	next_record \
+	plus(n) - \
+	[[ next_record ]+ repeat(record_length, _Right clear) previous_record [ previous_record ] next_record -]+ \
+	previous_record
+
+//rail > 2
+#define shrink_rail_(n) \
+	next_record \
+	plus(n) - \
+	[[ next_record ] previous_record - previous_record [ previous_record ] next_record -]+ \
+	previous_record
+
+#define expand_n_clear_rail expand_n_clear_rail_(float_length)
+#define shrink_rail shrink_rail_(float_length)
+
+#define create_rail expand_rail(float_length)
+

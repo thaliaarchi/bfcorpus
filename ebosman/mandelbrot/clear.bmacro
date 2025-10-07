@@ -1,0 +1,61 @@
+
+#define clear [-]
+
+// Clearing
+
+#define clear_ALU(n) \
+	n(_Right) \
+	clear \
+	n(_Left) \
+	next_record
+
+#define clear_register(n) \
+	next_record \
+	[ clear_ALU(n) ] \
+	to_begin
+
+#define clear2_ALU(n,m) \
+	at(n, clear) \
+	at(m, clear) \
+	next_record
+
+#define clear_register2(n,m) \
+	next_record \
+	[ clear2_ALU(n,m) ] \
+	to_begin
+
+#define clear3_ALU(n,m,o) \
+	at(n, clear) \
+	at(m, clear) \
+	at(o, clear) \
+	next_record
+
+#define clear_register3(n,m,o) \
+	next_record \
+	[ clear3_ALU(n,m,o) ] \
+	to_begin
+
+#define clear_all_registers \
+	next_record \
+	[ _Right repeat(record_length_min_1, [-] _Right) ] \
+	to_begin
+
+
+#define clear_the_first_six_registers \
+	next_record \
+	[ > [-] > [-] > [-] > [-] > [-] > [-] <<<<<< next_record ] \
+	to_begin
+
+#define clear_the_first_six_bits \
+	> [-] > [-] > [-] > [-] > [-] > [-] <<<<<<
+
+#define clear_bits \
+	repeat(record_length, [-] _Right ) previous_record
+
+
+#define fill_register(n) \
+	next_record \
+	[ increase(n) next_record ] \
+	to_begin
+		
+
