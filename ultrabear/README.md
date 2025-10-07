@@ -18,4 +18,4 @@ These programs included in ultrabear/bfi were taken from copy's [El Brainfuck](h
 - [examples/hanoi.bf](https://github.com/ultrabear/bfi/blob/main/examples/hanoi.bf) -> ../copy/third_party/hanoi.bf
 - [examples/oobrain.bf](https://github.com/ultrabear/bfi/blob/main/examples/oobrain.bf) -> ../copy/third_party/oobrain.b
 - [examples/squares.bf](https://github.com/ultrabear/bfi/blob/main/examples/squares.bf) -> ../cristofd/squares.b
-- [examples/triangle.bf](https://github.com/ultrabear/bfi/blob/main/examples/triangle.bf) -> ../copy/third_party/triangle.bf
+- [examples/triangle.bf](https://github.com/ultrabear/bfi/blob/main/examples/triangle.bf) -> ../nyyrikki/triangle.bf

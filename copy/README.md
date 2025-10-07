@@ -25,6 +25,7 @@ License: None
 - [random.b](https://copy.sh/brainfuck/prog/random.b) -> [../cristofd/random.b](../cristofd/random.b)
 - [rot13.b](https://copy.sh/brainfuck/prog/rot13.b) -> [../cristofd/rot13.b](../cristofd/rot13.b)
 - [squares.b](https://copy.sh/brainfuck/prog/squares.b) -> [../cristofd/squares.b](../cristofd/squares.b)
+- [triangle.bf](https://copy.sh/brainfuck/prog/triangle.bf) -> [../nyyrikki/triangle.bf](../nyyrikki/triangle.bf)
 - [wc.b](https://copy.sh/brainfuck/prog/wc.b) -> [../cristofd/wc.b](../cristofd/wc.b)
 
 TODO:
@@ -36,7 +37,6 @@ TODO:
 - [oobrain.b](https://copy.sh/brainfuck/prog/oobrain.b)
 - [PI16.BF](https://copy.sh/brainfuck/prog/PI16.BF)
 - [quine505.b](https://copy.sh/brainfuck/prog/quine505.b)
-- [triangle.bf](https://copy.sh/brainfuck/prog/triangle.bf)
 - [yapi.b](https://copy.sh/brainfuck/prog/yapi.b)
 
 Several programs are sourced from <https://esoteric.sange.fi/brainfuck/bf-source/prog/>.
