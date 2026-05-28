@@ -21,6 +21,7 @@ This is a collection of Brainfuck programs written by various authors.
 - [keymaker](keymaker/README.md): Programs by Keymaker
 - [kiwec](kiwec/README.md): wc program by kiwec
 - [lvogel](lvogel/README.md): Programs by Laurent Vogel
+- [m-archibald](m-archibald/README.md): Brainfuino program by Matthew Archibald
 - [makenowjust](makenowjust/README.md): Quines by TSUYUSATO Kitsune
 - [mitxela](mitxela/README.md): Tic tac toe AI by mitxela
 - [none1](none1/README.md): Programs by None1
